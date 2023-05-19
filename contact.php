@@ -7,6 +7,5 @@
   print ( "<h2>" . $name . "</h2>");
   print ( "<h2>" . $message . "</h2>");
 
-  
   ?>
 
