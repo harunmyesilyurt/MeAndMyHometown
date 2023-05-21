@@ -42,21 +42,18 @@
 </html>
 <script>
 function validateForm() {
-  // Email inputu kontrolü
   var emailInput = document.forms["login"]["email"].value;
   if (emailInput == "") {
     alert("Email alanı boş bırakılamaz");
     return false;
   }
 
-  // Email format kontrolü
   var emailRegex = /^\S+@\S+\.\S+$/;
   if (!emailRegex.test(emailInput)) {
     alert("Geçerli bir email adresi giriniz");
     return false;
   }
 
-  // Şifre inputu kontrolü
   var passwordInput = document.forms["login"]["password"].value;
   if (passwordInput == "") {
     alert("Şifre alanı boş bırakılamaz");
